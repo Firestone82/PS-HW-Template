@@ -1,12 +1,14 @@
 \section*{Úkol 1}
 \label{sec:task-1}
 
-Pomocí nástrojů explorační analýzy zkoumejte nárůst výkonnostních skóre (FPS) po aplikaci 1.5 patche (tj. rozdíl výkonnostních skóre pro verzi „patched“ a verzi „release“) ve hře "Cyberpunk 2077" pro grafické karty Nvidia RTX 3070 Ti a AMD Radeon RX 7700 XT. Data vhodně graficky prezentujte (krabicový graf, histogram, q-q graf) a doplňte následující tabulku a text.
+Pomocí nástrojů explorační analýzy zkoumejte nárůst výkonnostních skóre (FPS) po aplikaci 1.5 patche 
+(tj. rozdíl výkonnostních skóre pro verzi „patched“ a verzi „release“) ve hře "Cyberpunk 2077" pro grafické karty 
+Nvidia RTX 3070 Ti a AMD Radeon RX 7700 XT. Data vhodně graficky prezentujte (krabicový graf, histogram, q-q graf) 
+a doplňte následující tabulku a text.
 
 \vspace{2em}
 \noindent
 Výsledky popisné statistiky lze vidět v Tab. 1 a na \TODO (doplňte).
-\vspace{2em}
 
 % Fill your table values here :)
 \newcommand{\rangeValues}       {0, 0, 0, 0}
@@ -29,6 +31,7 @@ Výsledky popisné statistiky lze vidět v Tab. 1 a na \TODO (doplňte).
     \pgfmathresult%
 }
 
+\vspace{2em}
 \begin{table}[h!]
     \renewcommand{\arraystretch}{1.3}
     \resizebox{\textwidth}{!}{%
@@ -63,7 +66,14 @@ Výsledky popisné statistiky lze vidět v Tab. 1 a na \TODO (doplňte).
 \newpage
 \subsubsection*{Analýza nárůstu výkonnostních skóre (FPS) po aplikaci 1.5 patche ve hře "Cyberpunk 2077" pro grafickou kartu Nvidia RTX 3070 Ti}
 
-Během testu byl zjišťován nárůst FPS pro grafickou kartu Nvidia RTX 3070 Ti ve hře "Cyberpunk 2077" mezi původním release a verzí s 1.5 patchem pro \TODO testovacích systémů. Zjištěný nárůst FPS se pohyboval v rozmezí \TODO FPS až \TODO FPS. \textul{Nárůst FPS v testu č. \TODO byl na základě metody vnitřních hradeb identifikován jako odlehlé pozorování a nebude zahrnut do dalšího zpracování.\footnote{V případě potřeby (existence vícero odlehlých pozorování) větu vhodným způsobem upravte.} Možné příčiny vzniku odlehlých pozorování jsou: \TODO / Žádný z nárůstů FPS nebyl identifikován jako odlehlé pozorování.} Dále uvedené výsledky tedy pocházejí z analýzy nárůstů FPS zjištěných u \TODO testovacích systémů. Průměrný nárůst FPS byl \TODO FPS, směrodatná odchylka pak \TODO FPS. U poloviny testovacích cyklů nárůst FPS nepřekročil \TODO FPS. V polovině případů se nárůst FPS pohyboval v rozmezí \TODO FPS až \TODO FPS. \ul{Vzhledem k hodnotě variačního koeficientu (\TODO\%) lze / nelze analyzovaný soubor považovat za homogenní./ Vzhledem k povaze měřené veličiny není variační koeficient vhodnou mírou pro posouzení variability souboru.}
+Během testu byl zjišťován nárůst FPS pro grafickou kartu Nvidia RTX 3070 Ti ve hře "Cyberpunk 2077" mezi původním release a verzí s 1.5 patchem 
+pro \TODO testovacích systémů. Zjištěný nárůst FPS se pohyboval v rozmezí \TODO FPS až \TODO FPS. \textul{Nárůst FPS v testu č. \TODO byl na základě
+metody vnitřních hradeb identifikován jako odlehlé pozorování a nebude zahrnut do dalšího zpracování.\footnote{V případě potřeby 
+(existence vícero odlehlých pozorování) větu vhodným způsobem upravte.} Možné příčiny vzniku odlehlých pozorování jsou: \TODO / Žádný z nárůstů 
+FPS nebyl identifikován jako odlehlé pozorování.} Dále uvedené výsledky tedy pocházejí z analýzy nárůstů FPS zjištěných u \TODO testovacích systémů. 
+Průměrný nárůst FPS byl \TODO FPS, směrodatná odchylka pak \TODO FPS. U poloviny testovacích cyklů nárůst FPS nepřekročil \TODO FPS. 
+V polovině případů se nárůst FPS pohyboval v rozmezí \TODO FPS až \TODO FPS. \ul{Vzhledem k hodnotě variačního koeficientu (\TODO\%) lze 
+/ nelze analyzovaný soubor považovat za homogenní./ Vzhledem k povaze měřené veličiny není variační koeficient vhodnou mírou pro posouzení variability souboru.}
 
 \vspace{1em}
 \noindent
@@ -71,10 +81,14 @@ Výsledky pro grafickou kartu AMD Radeon RX 7700 XT lze komentovat obdobně.
 
 \subsubsection*{Ověření normality nárůstu výkonnostních skóre (FPS) po aplikaci 1.5 patche ve hře "Cyberpunk 2077" pro grafickou kartu Nvidia RTX 3070 Ti}
 
-Na základě grafického zobrazení (viz \TODO) a výběrové šikmosti a špičatosti (výběrová šikmost i špičatost \ul{leží \slash neleží} v intervalu (-2, 2) \ul{lze \slash nelze} předpokládat, že pozorovaný nárůst FPS má normální rozdělení. Dle \ul{pravidla 3$\sigma$ \slash Čebyševovy nerovnosti} lze tedy očekávat, že \ul{přibližně u 95 \% \slash alespoň 75 \%} naměřených nárůstů ve výkonu bude \TODO FPS až \TODO FPS.
+Na základě grafického zobrazení (viz \TODO) a výběrové šikmosti a špičatosti (výběrová šikmost i špičatost \ul{leží \slash neleží} 
+v intervalu (-2, 2) \ul{lze \slash nelze} předpokládat, že pozorovaný nárůst FPS má normální rozdělení. Dle \ul{pravidla 3$\sigma$ \slash Čebyševovy nerovnosti} 
+lze tedy očekávat, že \ul{přibližně u 95 \% \slash alespoň 75 \%} naměřených nárůstů ve výkonu bude \TODO FPS až \TODO FPS.
 
 \subsubsection*{Ověření normality nárůstu výkonnostních skóre (FPS) po aplikaci 1.5 patche ve hře "Cyberpunk 2077" pro grafickou kartu AMD Radeon RX 7700 XT}
 
-Na základě grafického zobrazení (viz \TODO) a výběrové šikmosti a špičatosti (výběrová šikmost i špičatost \ul{leží \slash neleží} v intervalu (-2, 2) \ul{lze \slash nelze} předpokládat, že pozorovaný nárůst FPS má normální rozdělení. Dle \ul{pravidla 3$\sigma$ \slash Čebyševovy nerovnosti} lze tedy očekávat, že \ul{přibližně u 95 \% \slash alespoň 75 \%} naměřených nárůstů ve výkonu bude \TODO FPS až \TODO FPS.
+Na základě grafického zobrazení (viz \TODO) a výběrové šikmosti a špičatosti (výběrová šikmost i špičatost \ul{leží \slash neleží} v intervalu (-2, 2) 
+\ul{lze \slash nelze} předpokládat, že pozorovaný nárůst FPS má normální rozdělení. Dle \ul{pravidla 3$\sigma$ \slash Čebyševovy nerovnosti} lze tedy očekávat, 
+že \ul{přibližně u 95 \% \slash alespoň 75 \%} naměřených nárůstů ve výkonu bude \TODO FPS až \TODO FPS.
 
 \endinput
