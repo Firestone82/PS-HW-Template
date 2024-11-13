@@ -32,7 +32,7 @@ Výsledky popisné statistiky lze vidět v Tab. 1 a na \TODO (doplňte).
 \begin{table}[h!]
     \renewcommand{\arraystretch}{1.3}
     \resizebox{\textwidth}{!}{%
-        \begin{tabular}{|p{3.5cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+        \begin{tabular}{|p{3.5cm}|P{3cm}|P{3cm}|P{3cm}|P{3cm}|}
             \hline
             & \multicolumn{2}{P{6cm}|}{\textbf{Původní data}} & \multicolumn{2}{P{6cm}|}{\textbf{Data po odstranění odlehlých pozorování}} \\ \hline
             & \centering \textbf{Nvidia RTX 3070 Ti} & \textbf{AMD Radeon RX 7700 XT} & \centering \textbf{Nvidia RTX 3070 Ti} & \textbf{AMD Radeon RX 7700 XT} \\ \hline
@@ -48,11 +48,12 @@ Výsledky popisné statistiky lze vidět v Tab. 1 a na \TODO (doplňte).
             šikmost               & \tableValue{\skewnessValues}{0} & \tableValue{\skewnessValues}{1} & \tableValue{\skewnessValues}{2} & \tableValue{\skewnessValues}{3} \\ \hline
             špičatost             & \tableValue{\kurtosisValues}{0} & \tableValue{\kurtosisValues}{1} & \tableValue{\kurtosisValues}{2} & \tableValue{\kurtosisValues}{3} \\ \hline
             \multicolumn{5}{|p{16cm}|}{\textbf{Identifikace odlehlých pozorování (vnitřní hradby)}} \\ \hline
-            dolní mez   & \tableValue{\lowerBoundValues}{0} & \tableValue{\lowerBoundValues}{1} & \tableValue{\lowerBoundValues}{2} & \tableValue{\lowerBoundValues}{3} \\ \hline
-            horní mez   & \tableValue{\upperBoundValues}{0} & \tableValue{\upperBoundValues}{1} & \tableValue{\upperBoundValues}{2} & \tableValue{\upperBoundValues}{3} \\ \hline
+            dolní mez   & \tableValue{\lowerBoundValues}{0} & \tableValue{\lowerBoundValues}{1} & \multicolumn{2}{P{6cm}|}{------------} \\ \hline
+            horní mez   & \tableValue{\upperBoundValues}{0} & \tableValue{\upperBoundValues}{1} & \multicolumn{2}{P{6cm}|}{------------} \\ \hline
         \end{tabular}%
     }
     \caption{Nárůst výkonnostních skóre (FPS) po aplikaci 1.5 patche ve hře "Cyberpunk 2077" pro grafické karty Nvidia RTX 3070 Ti a AMD Radeon RX 7700 XT (souhrnné statistiky)}
+    \label{tab:characteristics-summary}
 \end{table}
 
 \newpage
@@ -72,7 +73,7 @@ Výsledky pro grafickou kartu AMD Radeon RX 7700 XT lze komentovat obdobně.
 
 Na základě grafického zobrazení (viz \TODO) a výběrové šikmosti a špičatosti (výběrová šikmost i špičatost \ul{leží \slash neleží} v intervalu (-2, 2) \ul{lze \slash nelze} předpokládat, že pozorovaný nárůst FPS má normální rozdělení. Dle \ul{pravidla 3$\sigma$ \slash Čebyševovy nerovnosti} lze tedy očekávat, že \ul{přibližně u 95 \% \slash alespoň 75 \%} naměřených nárůstů ve výkonu bude \TODO FPS až \TODO FPS.
 
-\subsubsection{Ověření normality nárůstu výkonnostních skóre (FPS) po aplikaci 1.5 patche ve hře "Cyberpunk 2077" pro grafickou kartu AMD Radeon RX 7700 XT}
+\subsubsection*{Ověření normality nárůstu výkonnostních skóre (FPS) po aplikaci 1.5 patche ve hře "Cyberpunk 2077" pro grafickou kartu AMD Radeon RX 7700 XT}
 
 Na základě grafického zobrazení (viz \TODO) a výběrové šikmosti a špičatosti (výběrová šikmost i špičatost \ul{leží \slash neleží} v intervalu (-2, 2) \ul{lze \slash nelze} předpokládat, že pozorovaný nárůst FPS má normální rozdělení. Dle \ul{pravidla 3$\sigma$ \slash Čebyševovy nerovnosti} lze tedy očekávat, že \ul{přibližně u 95 \% \slash alespoň 75 \%} naměřených nárůstů ve výkonu bude \TODO FPS až \TODO FPS.
 
