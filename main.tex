@@ -10,10 +10,13 @@
 \usepackage{array}
 \usepackage{pgf}
 \usepackage{enumitem}
-\usepackage{xcolor}
 \usepackage[normalem]{ulem}
 
 \geometry{top=2.5cm, bottom=2.5cm, left=2.0cm, right=2.0cm}
+
+% Template Authors:
+% - Bc. Jakub Růžička (https://github.com/Dr3ynor)
+% - Bc. Pavel Mikula  (https://github.com/Firestone82)
 
 % Variables, fill it here!
 \newcommand{\sourceId}   {X}
@@ -24,7 +27,11 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% TODO command, to dont forger where to fill values
+% Table and Image references
+\newcommand{\tabref}[1]{Tabulka \ref{#1}}
+\newcommand{\figref}[1]{Obrázek \ref{#1}}
+
+% TODO command, to show spaces where to fill requested values more easily
 \newcommand{\TODO}{\mbox{\textbf{\textcolor{red}{...} }}}
 
 \pagestyle{fancy}
