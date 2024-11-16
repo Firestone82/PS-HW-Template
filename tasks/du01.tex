@@ -34,32 +34,32 @@ Výsledky popisné statistiky lze vidět v \tabref{tab:characteristics-summary} 
     \mbox{\pgfmathresult}%
 }
 
-\vspace{2em}
 \begin{table}[h!]
+    \caption{Nárůst výkonnostních skóre (FPS) po aplikaci 1.5 patche ve hře "Cyberpunk 2077" pro grafické karty Nvidia RTX 3070 Ti a AMD Radeon RX 7700 XT (souhrnné statistiky)}
+    \label{tab:characteristics-summary}
+    \vspace{0.5em}
     \renewcommand{\arraystretch}{1.3}
     \resizebox{\textwidth}{!}{%
         \begin{tabular}{|p{3.5cm}|P{3cm}|P{3cm}|P{3cm}|P{3cm}|}
             \hline
             & \multicolumn{2}{P{6cm}|}{\textbf{Původní data}} & \multicolumn{2}{P{6cm}|}{\textbf{Data po odstranění odlehlých pozorování}} \\ \hline
             & \centering \textbf{Nvidia RTX 3070 Ti} & \textbf{AMD Radeon RX 7700 XT} & \centering \textbf{Nvidia RTX 3070 Ti} & \textbf{AMD Radeon RX 7700 XT} \\ \hline
-            rozsah souboru        & \tableValue{\rangeValues}{0}      & \tableValue{\rangeValues}{1}      & \tableValue{\rangeValues}{2}    & \tableValue{\rangeValues}{3}    \\ \hline
-            minimum               & \tableValue{\minValues}{0}        & \tableValue{\minValues}{1}        & \tableValue{\minValues}{2}      & \tableValue{\minValues}{3}      \\ \hline
-            dolní kvartil         & \tableValue{\QfValues}{0}         & \tableValue{\QfValues}{1}         & \tableValue{\QfValues}{2}       & \tableValue{\QfValues}{3}       \\ \hline
-            medián                & \tableValue{\medianValues}{0}     & \tableValue{\medianValues}{1}     & \tableValue{\medianValues}{2}   & \tableValue{\medianValues}{3}   \\ \hline
-            průměr                & \tableValue{\meanValues}{0}       & \tableValue{\meanValues}{1}       & \tableValue{\meanValues}{2}     & \tableValue{\meanValues}{3}     \\ \hline
-            horní kvartil         & \tableValue{\QtValues}{0}         & \tableValue{\QtValues}{1}         & \tableValue{\QtValues}{2}       & \tableValue{\QtValues}{3}       \\ \hline
-            maximum               & \tableValue{\maxValues}{0}        & \tableValue{\maxValues}{1}        & \tableValue{\maxValues}{2}      & \tableValue{\maxValues}{3}      \\ \hline
-            směrodat. odchylka    & \tableValue{\sdValues}{0}         & \tableValue{\sdValues}{1}         & \tableValue{\sdValues}{2}       & \tableValue{\sdValues}{3}       \\ \hline
-            variační koefi. (\%)  & \tableValue{\cvValues}{0}         & \tableValue{\cvValues}{1}         & \tableValue{\cvValues}{2}       & \tableValue{\cvValues}{3}       \\ \hline
-            šikmost               & \tableValue{\skewnessValues}{0}   & \tableValue{\skewnessValues}{1}   & \tableValue{\skewnessValues}{2} & \tableValue{\skewnessValues}{3} \\ \hline
-            špičatost             & \tableValue{\kurtosisValues}{0}   & \tableValue{\kurtosisValues}{1}   & \tableValue{\kurtosisValues}{2} & \tableValue{\kurtosisValues}{3} \\ \hline
+            rozsah souboru        & \tableValue{\rangeValues}{0}    & \tableValue{\rangeValues}{1}    & \tableValue{\rangeValues}{2}    & \tableValue{\rangeValues}{3}    \\ \hline
+            minimum               & \tableValue{\minValues}{0}      & \tableValue{\minValues}{1}      & \tableValue{\minValues}{2}      & \tableValue{\minValues}{3}      \\ \hline
+            dolní kvartil         & \tableValue{\QfValues}{0}       & \tableValue{\QfValues}{1}       & \tableValue{\QfValues}{2}       & \tableValue{\QfValues}{3}       \\ \hline
+            medián                & \tableValue{\medianValues}{0}   & \tableValue{\medianValues}{1}   & \tableValue{\medianValues}{2}   & \tableValue{\medianValues}{3}   \\ \hline
+            průměr                & \tableValue{\meanValues}{0}     & \tableValue{\meanValues}{1}     & \tableValue{\meanValues}{2}     & \tableValue{\meanValues}{3}     \\ \hline
+            horní kvartil         & \tableValue{\QtValues}{0}       & \tableValue{\QtValues}{1}       & \tableValue{\QtValues}{2}       & \tableValue{\QtValues}{3}       \\ \hline
+            maximum               & \tableValue{\maxValues}{0}      & \tableValue{\maxValues}{1}      & \tableValue{\maxValues}{2}      & \tableValue{\maxValues}{3}      \\ \hline
+            směrodat. odchylka    & \tableValue{\sdValues}{0}       & \tableValue{\sdValues}{1}       & \tableValue{\sdValues}{2}       & \tableValue{\sdValues}{3}       \\ \hline
+            variační koefi. (\%)  & \tableValue{\cvValues}{0}       & \tableValue{\cvValues}{1}       & \tableValue{\cvValues}{2}       & \tableValue{\cvValues}{3}       \\ \hline
+            šikmost               & \tableValue{\skewnessValues}{0} & \tableValue{\skewnessValues}{1} & \tableValue{\skewnessValues}{2} & \tableValue{\skewnessValues}{3} \\ \hline
+            špičatost             & \tableValue{\kurtosisValues}{0} & \tableValue{\kurtosisValues}{1} & \tableValue{\kurtosisValues}{2} & \tableValue{\kurtosisValues}{3} \\ \hline
             \multicolumn{5}{|p{16cm}|}{\textbf{Identifikace odlehlých pozorování (vnitřní hradby)}} \\ \hline
-            dolní mez             & \tableValue{\lowerBoundValues}{0} & \tableValue{\lowerBoundValues}{1} & \multicolumn{2}{P{6cm}|}{------------} \\ \hline
-            horní mez             & \tableValue{\upperBoundValues}{0} & \tableValue{\upperBoundValues}{1} & \multicolumn{2}{P{6cm}|}{------------} \\ \hline
+            dolní mez   & \tableValue{\lowerBoundValues}{0} & \tableValue{\lowerBoundValues}{1} & \multicolumn{2}{P{6cm}|}{------------} \\ \hline
+            horní mez   & \tableValue{\upperBoundValues}{0} & \tableValue{\upperBoundValues}{1} & \multicolumn{2}{P{6cm}|}{------------} \\ \hline
         \end{tabular}%
     }
-    \caption{Nárůst výkonnostních skóre (FPS) po aplikaci 1.5 patche ve hře "Cyberpunk 2077" pro grafické karty Nvidia RTX 3070 Ti a AMD Radeon RX 7700 XT (souhrnné statistiky)}
-    \label{tab:characteristics-summary}
 \end{table}
 
 \newpage

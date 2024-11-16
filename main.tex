@@ -11,6 +11,8 @@
 \usepackage{pgf}
 \usepackage{enumitem}
 \usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\usepackage[figurename=Obr.,tablename=Tab.]{caption}
 
 \geometry{top=2.5cm, bottom=2.5cm, left=2.0cm, right=2.0cm}
 
@@ -28,8 +30,8 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Table and Image references
-\newcommand{\tabref}[1]{Tabulka \ref{#1}}
-\newcommand{\figref}[1]{Obrázek \ref{#1}}
+\newcommand{\tabref}[1]{Tab. \ref{#1}}
+\newcommand{\figref}[1]{Obr. \ref{#1}}
 
 % TODO command, to show spaces where to fill requested values more easily
 \newcommand{\TODO}{\mbox{\textbf{\textcolor{red}{...} }}}
