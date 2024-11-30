@@ -31,7 +31,12 @@ Výsledky popisné statistiky lze vidět v \tabref{tab:characteristics-summary} 
 % Helper command to put everything in table.
 \newcommand{\tableValue}[2]{%
     \pgfmathparse{{#1}[#2]}%
-    \mbox{\pgfmathresult}%
+    \edef\tempResult{\pgfmathresult}%
+    \ifnum\pdfstrcmp{\tempResult}{inf}=0 %
+        $\infty$%
+    \else%
+        \mbox{\tempResult}%
+    \fi%
 }
 
 \begin{table}[h!]
